@@ -32,6 +32,7 @@ public class ArrayTypeHandler extends BaseTypeHandler<Object> {
 
   @Override
   public void setNonNullParameter(PreparedStatement ps, int i, Object parameter, JdbcType jdbcType) throws SQLException {
+    System.out.println(111);
     ps.setArray(i, (Array) parameter);
   }
 
